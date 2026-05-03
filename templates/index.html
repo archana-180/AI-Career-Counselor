@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Career Counselor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>AI Career Counselor</h1>
+
+    <form method="POST">
+        <input type="text" name="name" placeholder="Enter your name" required>
+
+        <input type="text" name="skill" placeholder="Enter your skill" required>
+
+        <input type="text" name="interest" placeholder="Enter your interest" required>
+
+        <input type="number" step="0.1" name="cgpa" placeholder="Enter CGPA" required>
+
+        <button type="submit">Get Career Suggestion</button>
+    </form>
+    <br>
+    <a href="/login">
+        <button type="button">Admin Login</button>
+    </a>
+
+    {% if results %}
+        <h2>Hello {{ name }}</h2>
+
+        <h3>Recommended Careers:</h3>
+
+        {% for item in results %}
+            <p>{{ item }}</p>
+        {% endfor %}
+    {% endif %}
+</div>
+
+</body>
+</html>

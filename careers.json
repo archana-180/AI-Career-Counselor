@@ -1,0 +1,77 @@
+[
+  {
+    "career": "Software Developer",
+    "skills": ["python", "java", "coding"],
+    "interest": "development"
+  },
+  {
+    "career": "Data Scientist",
+    "skills": ["python", "statistics", "machine learning"],
+    "interest": "data"
+  },
+  {
+    "career": "UI/UX Designer",
+    "skills": ["design", "figma", "creativity"],
+    "interest": "design"
+  },
+  {
+    "career": "Cybersecurity Analyst",
+    "skills": ["networking", "security", "linux"],
+    "interest": "security"
+  },
+  {
+    "career": "Cloud Engineer",
+    "skills": ["aws", "linux", "networking"],
+    "interest": "cloud"
+  },
+  {
+    "career": "Web Developer",
+    "skills": ["html", "css", "javascript"],
+    "interest": "development"
+  },
+  {
+    "career": "Mobile App Developer",
+    "skills": ["java", "kotlin", "flutter"],
+    "interest": "development"
+  },
+  {
+    "career": "DevOps Engineer",
+    "skills": ["docker", "linux", "aws"],
+    "interest": "cloud"
+  },
+  {
+    "career": "Database Administrator",
+    "skills": ["sql", "mysql", "database"],
+    "interest": "data"
+  },
+  {
+    "career": "Game Developer",
+    "skills": ["c++", "unity", "creativity"],
+    "interest": "gaming"
+  },
+  {
+    "career": "AI Engineer",
+    "skills": ["python", "machine learning", "deep learning"],
+    "interest": "ai"
+  },
+  {
+    "career": "Network Engineer",
+    "skills": ["networking", "routers", "linux"],
+    "interest": "security"
+  },
+  {
+    "career": "Business Analyst",
+    "skills": ["communication", "excel", "analysis"],
+    "interest": "business"
+  },
+  {
+    "career": "Digital Marketer",
+    "skills": ["seo", "social media", "creativity"],
+    "interest": "marketing"
+  },
+  {
+    "career": "QA Tester",
+    "skills": ["testing", "debugging", "attention"],
+    "interest": "quality"
+  }
+]

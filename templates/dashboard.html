@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container" style="width:95%; max-width:1200px;">
+
+<h1>Admin Dashboard</h1>
+
+<h3>Total Students: {{ total }}</h3>
+
+<form method="GET" action="/dashboard">
+    <input type="text" name="search" placeholder="Search by name">
+    <button type="submit">Search</button>
+</form>
+
+<br>
+
+<table border="1" cellpadding="10" cellspacing="0" width="100%" style="background:white; color:black;">
+<tr style="background:#667eea; color:white;">
+<th>ID</th>
+<th>Name</th>
+<th>Skill</th>
+<th>Interest</th>
+<th>CGPA</th>
+<th>Result</th>
+<th>Action</th>
+</tr>
+
+{% for row in data %}
+<tr>
+<td>{{ row[0] }}</td>
+<td>{{ row[1] }}</td>
+<td>{{ row[2] }}</td>
+<td>{{ row[3] }}</td>
+<td>{{ row[4] }}</td>
+<td>{{ row[5] }}</td>
+<td><a href="/delete/{{ row[0] }}">Delete</a></td>
+</tr>
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+</html>
